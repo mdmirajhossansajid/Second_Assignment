@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.inter{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+/*NAvBAR DESIGN*/
+header{
+    background-color: rgba(65, 37, 103, 1);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 30px 200px;
+}
+nav>h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: white;
+}
+nav>h1>span{
+    background: linear-gradient(0deg, rgba(247, 233, 63, 1) 0%, #FB09B4 51%, #9100F8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+nav>div{
+    display: flex;
+    gap: 2rem;
+} 
+ nav>div>a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+ }
+ .btn{
+    background:linear-gradient(90deg, #F7E93F 0%, #FB09B4 51%,#9100F8 100%);
+    color: white;
+    border: none;
+    padding: 0.8rem 1rem; 
+    border-radius: 10000px;
+    font-size: 1rem;
+    font-weight: 500;
+
+ }
