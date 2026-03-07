@@ -56,34 +56,47 @@ nav>div{
     background-position: center;
     background-repeat: no-repeat;
     min-height: 760px;
+    padding-top: 96px;
     
  }
- .hero .hero-img{
-   position: relative;
- }
- .circle{
-    max-width: 350px;
-    min-height: 350px;
-    position: absolute;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%, 20%);
+.hero-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    
-    
- }
- .mic{
-    max-width: 200px;
-    min-height: 200px;
+}
+.circle {
+    width: 350px;
+    height: auto;
+
+}
+.mic {
+    width: 117px;
+    height: auto;
     position: absolute;
+    top: 50%;   
     left: 50%;
-    right: 50%;
-    transform: translate(-50%,70%);
- }
- .hero-text{
+    transform: translate(-50%, -50%);
+
+}
+.hero .hero-container span {
+    background-color: #00FF88;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 1000px;
+    display: inline-block;
+    position: absolute;
+    left: 54%;
+    top: 2%;
+
+}
+.hero-text {
     text-align: center;
-    margin-top: 491px;
- }
+    margin-top: 40px;
+}
   .hero-text h1{
     color: white;
     font-size: 3.8rem;
@@ -95,6 +108,7 @@ nav>div{
     font-weight: normal;
     margin-bottom: 24px;
 }
+
 .hero-btn{
     text-align: center;
 }
@@ -114,5 +128,5 @@ nav>div{
 }
 .btn-two img{
     margin-right: 8px;
-}
+} 
 
