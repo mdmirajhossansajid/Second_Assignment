@@ -47,11 +47,13 @@ nav>div{
     font-size: 1rem;
     font-weight: 500;
     text-align: center;
+    transition: all 0.3s ease;
 
  }
  .btn:hover {
      background-color: #00FF88;
      color: black;
+    transform: translateY(-3px);
  }
  /*HERO SECTION*/
  .hero{
@@ -307,6 +309,7 @@ nav>div{
     border-radius: 24px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     gap: 24px;
+    height: auto;
 }
 .host-text h3{
     font-size: 2rem;
@@ -321,9 +324,28 @@ nav>div{
     line-height: 24px;
     margin-bottom: 16px;
 }
-.icon{
-    gap: 8px;
+.icon {
     display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.icon div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #fb09b21b;
+}
+
+.icon img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
 }
 /* Footer */
 footer {
@@ -347,6 +369,7 @@ footer>h1>span{
 }
 .footer-icon{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 40px;
@@ -357,7 +380,10 @@ footer>h1>span{
     color: white;
 
 }
-.footer-icon>div>img{
+
+.footer-icon img {
+    width: 24px;
+    height: 24px;
     margin-right: 8px;
 }
 footer p{
@@ -365,4 +391,188 @@ footer p{
     line-height: 24px;
     color: rgba(250, 250, 250, 1);
     margin-top: 32px;
+}
+
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width:768px) {
+
+    /* navbar */
+
+    nav {
+        padding: 20px;
+    }
+
+    nav h1 {
+        font-size: 1.8rem;
+    }
+
+    nav>div {
+        display: none;
+    }
+
+    .hero-btn {
+        padding: 8px 14px;
+        font-size: 0.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 10px;
+        flex-wrap: nowrap;
+    }
+
+
+    /* hero */
+
+    .hero {
+        min-height: auto;
+        padding: 80px 20px;
+    }
+
+    .circle {
+        width: 220px;
+    }
+
+    .mic {
+        width: 80px;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 0.9rem;
+    }
+
+    .hero-btn {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .btn-two {
+        margin-left: 0;
+    }
+
+
+    /* about */
+
+    .about-text {
+        padding: 40px 20px;
+    }
+
+    .about-text h2 {
+        font-size: 2rem;
+    }
+
+    .about-reviews {
+        padding: 20px;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .about-reviews>div {
+        width: 45%;
+        text-align: center;
+    }
+
+    .about-reviews h3 {
+        font-size: 1.8rem;
+    }
+
+
+    /* choose */
+
+    .choose {
+        padding: 60px 20px;
+    }
+
+    .choose h2 {
+        font-size: 2rem;
+    }
+
+    .choose-items {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+
+    .choose-items .one,
+    .two,
+    .three,
+    .four,
+    .five {
+        grid-column: span 1;
+        grid-row: span 1;
+        padding: 30px;
+    }
+
+    /* feature */
+
+    .feature {
+        padding: 80px 20px;
+    }
+
+    .episod h2 {
+        font-size: 2rem;
+    }
+
+    .episod-card {
+        flex-direction: column;
+    }
+
+    .episod-card div {
+        max-width: 100%;
+    }
+
+    .episod-card iframe {
+        width: 100%;
+    }
+
+
+    /* host */
+
+    .host>div {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .host img {
+        width: 120px;
+        border-radius: 50%;
+    }
+
+    .host-text h3 {
+        font-size: 1.5rem;
+    }
+
+    .host-text p {
+        font-size: 0.9rem;
+    }
+
+
+    /* footer */
+
+    footer {
+        padding: 60px 20px;
+    }
+
+    footer h1 {
+        font-size: 2rem;
+    }
+        .footer-icon {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            align-items: center;
+            justify-content: center;
+        }
+
+    .footer-icon div {
+        font-size: 0.9rem;
+    }
+
 }
