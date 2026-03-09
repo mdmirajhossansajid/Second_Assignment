@@ -326,25 +326,25 @@ nav>div{
 }
 .icon {
     display: flex;
-    justify-content: center;
     gap: 12px;
     margin-top: 20px;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .icon div {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70px;
-    height: 36px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     border: 1px solid #fb09b21b;
 }
 
 .icon img {
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     object-fit: contain;
 }
 /* Footer */
