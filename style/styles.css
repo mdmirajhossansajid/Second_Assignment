@@ -400,7 +400,7 @@ footer p{
 
 /* ================= MOBILE RESPONSIVE ================= */
 
-@media (max-width:768px) {
+@media (max-width:576px) {
 
     /* navbar */
 
@@ -429,18 +429,24 @@ footer p{
 
 
     /* hero */
-
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
     .hero {
-        min-height: auto;
-        padding: 80px 20px;
+          min-height: 420px;
+    background: url(../assets/hero-bg.png) center/cover no-repeat;
+    padding-top: 60px;
+
     }
 
     .circle {
-        width: 220px;
+        width: 181px;
     }
 
     .mic {
-        width: 80px;
+        width: 65px;
     }
 
     .hero-text h1 {
@@ -453,9 +459,9 @@ footer p{
 
     .hero-btn {
         display: flex;
-        flex-direction: column;
         gap: 12px;
         align-items: center;
+        padding-bottom: 37px;
     }
 
     .btn-two {
@@ -466,12 +472,16 @@ footer p{
     /* about */
 
     .about-text {
-        padding: 40px 20px;
+        padding: 30px 20px;
     }
 
     .about-text h2 {
         font-size: 2rem;
     }
+        .about-text p {
+            margin-bottom: 20px;
+            text-align: left;
+        }
 
     .about-reviews {
         padding: 20px;
